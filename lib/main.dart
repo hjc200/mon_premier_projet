@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: .fromSeed(seedColor: Colors.tealAccent),
       ),
       home: const MyHomePage(title: 'Ma première application'),
     );
@@ -106,7 +106,7 @@ class _MyHomePageState extends State<MyHomePage> {
           children: [
             const Text('You have pushed the button this many times:'),
             Text(
-              '$_counter',
+              'SALUT, JEAN CLAUDE ',
               style: Theme.of(context).textTheme.headlineMedium,
             ),
           ],

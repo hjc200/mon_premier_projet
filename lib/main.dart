@@ -30,7 +30,7 @@ class MyApp extends StatelessWidget {
         // tested with just a hot reload.
         colorScheme: .fromSeed(seedColor: Colors.tealAccent),
       ),
-      home: const MyHomePage(title: 'Ma première application'),
+      home: const MyHomePage(title: 'GREEN NATURAL'),
     );
   }
 }
@@ -104,10 +104,13 @@ class _MyHomePageState extends State<MyHomePage> {
           // wireframe for each widget.
           mainAxisAlignment: .center,
           children: [
-            const Text('You have pushed the button this many times:'),
+            const Text('premier test de l application flutter'),
             Text(
               'SALUT, JEAN CLAUDE ',
               style: Theme.of(context).textTheme.headlineMedium,
+            ),
+            const Text(
+              'ceci est un test nur la nouvelle application flutter',
             ),
           ],
         ),

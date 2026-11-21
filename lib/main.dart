@@ -12,7 +12,7 @@ class person{
 void main() => runApp(const CardApp());
 //StatelessWidget le widget qui ne change pas d'etat
 const people = [
-  person('hangabn jean claude','etudiant en software engineering','+237 659 41 34 86','hangban.jean@ictu.edu.cm','3'),
+  person('hangabn jean claude','etudiant en software engineering DE ICT UNIVERSITY DU CAMEROUN ','+237 659 41 34 86','hangban.jean@ictu.edu.cm','3'),
   person('Gilbert fox','etudiant en computer science','+237 699 92 89 99','gilbert.fox@ictu.edu.cm','2'),
   person('EMMA WILSONN','etudiante en cyber security','+237 689 99 19 29','emma.wilson@ictu.edu.cm','1'),
   person('Carl WINSLO', 'etudiant en robotique', '+237 690 89 89 09', 'carl.winsli@ictu.edu.cm', '4'),
@@ -89,11 +89,11 @@ class ProfileCard extends StatelessWidget{
             const SizedBox(width:18),
             //Expanded prend tout l'espace disponible pour les information de la  carte et evite le depassement part les long nom
             Expanded(
-              child: Column(//un element sur l'autre et alignement
+              child:  Column(//un element sur l'autre et alignement
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Text(name,style: textTheme.titleLarge),
-                Text(role),
+                Text(role,overflow:TextOverflow.ellipsis),
                 Text(email),
                 const SizedBox(height:8),
                 //icon de phone + numero de telephone
@@ -110,7 +110,9 @@ class ProfileCard extends StatelessWidget{
               ]
               ),
             ),
-          ]
+              ]
+              
+        
         ),//pour les element cote a cot 
       ),
     );
